@@ -1,0 +1,212 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 50px;
+}
+
+.header-wrapper {
+  background-color:#e5f4f9;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 15px 0;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo-image {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.logo-text {
+  font-family: 'Alkatra', cursive;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2979A2;
+}
+
+.navbar-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 35px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 50px;
+  margin: 80px 0 80px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: black;
+  width: 320px;
+  background-color: #fafafa
+}
+
+.menu-link:hover {
+  box-shadow: 0px 9px 32px 12px rgba(0, 0, 0, 0.1)
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.item-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.name-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.item-name {
+  width: 80%;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+
+.footer-wrapper {
+  background-color:#e5f4f9;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+}
+
+
+
+/* sledding.html */
+.sledding-wrapper {
+  height: calc(100vh - 250px);
+}
+
+.sledding-section {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.sledding-image {
+  width: 40%;
+}
+
+.sledding-info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.sledding-title {
+  margin: 0 0 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.sledding-description {
+  margin: 0 0 15px;
+}
+
+.sledding-age {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #dc2e2e;
+}
+
+.sledding-price {
+  font-size: 20px;
+}
+
+/* kontaktai.html */
+/* .contacts-title {
+  
+} */
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  height: calc(100vh - 350px);
+  margin: 100px 0;
+}
+
+.contacts-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.contacts-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: black;
+}
+
+.map-wrapper {
+  width: 40%;
+}
+
+.map {
+  width: 100%;
+}

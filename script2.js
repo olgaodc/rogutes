@@ -37,4 +37,14 @@ fetch('https://642c65dc208dfe25472f319b.mockapi.io/sleddings/' + itemId)
     sleddingPrice.setAttribute('class', 'sledding-price');
     sleddingPrice.innerHTML = `${data.price} €/para`;
     sleddingInfo.append(sleddingPrice);
+
+    const button = document.createElement('a');
+    button.setAttribute('class', 'button');
+    button.href = 'tel: +37062864135';
+    button.innerHTML = 'Susisiekti';
+    sleddingInfo.append(button);
+
+    button.addEventListener('click', () => {
+        button.innerHTML = '+37062864135';
+    })
 })

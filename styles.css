@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
+  min-width: 316px;
 }
 
 .container {
@@ -52,6 +53,25 @@ body {
   margin: 0;
   display: flex;
   gap: 35px;
+}
+
+.hamburger-menu{
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  border-radius: 25px;
+  background-color: #2979A2;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .hamburger-menu-line {
+  background-color: #FFFFFF;
 }
 
 .navbar-link {
@@ -123,6 +143,31 @@ body {
   padding: 25px 0;
 }
 
+@media (max-width: 405px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .navbar-list {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .menu-link {
+    width: 100%
+  }
+
+  .item-image {
+    height: unset;
+  }
+
+  .item-name {
+    width: 70%;
+  }
+}
 
 
 /* sledding.html */
@@ -134,7 +179,8 @@ body {
   margin: 100px 0;
   display: flex;
   justify-content: center;
-  gap: 50px;
+  align-items: center;
+  gap: 70px;
 }
 
 .sledding-image {
@@ -145,7 +191,7 @@ body {
   width: 40%;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 .sledding-title {
@@ -159,19 +205,70 @@ body {
 }
 
 .sledding-age {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-weight: 600;
   color: #dc2e2e;
 }
 
 .sledding-price {
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
+.button {
+  text-decoration: none;
+  max-width: 160px;
+  text-align: center;
+  color: white;
+  background-color: #2979A2;
+  padding: 15px 10px;
+  border-radius: 25px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 954px) {
+  .sledding-section {
+    gap: 50px;
+  }
+
+  .sledding-image,
+  .sledding-info {
+    width: 50%;
+  }
+}
+
+@media (max-width: 720px) {
+  .sledding-wrapper {
+    height: auto;
+  }
+
+  .sledding-section {
+    flex-direction: column;
+    gap: 35px;
+    margin: 50px 0 80px;
+  }
+
+  .sledding-image,
+  .sledding-info {
+    width: 80%;
+  }
+}
+
+@media (max-width: 514px) {
+  .sledding-image,
+  .sledding-info {
+    width: 100%;
+  }
+}
+
+
 /* kontaktai.html */
-/* .contacts-title {
-  
-} */
+.contacts-title {
+  font-weight: 600;
+}
 
 .contacts {
   display: flex;
@@ -209,4 +306,46 @@ body {
 
 .map {
   width: 100%;
+}
+
+@media (max-width: 954px) {
+  .map-wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 720px) {
+  .contacts {
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    margin: 40px 0 60px;
+    height: auto;
+  }
+
+  .contacts-list-wrapper {
+    text-align: center;
+  }
+
+  .contacts-title {
+    margin-top: 0;
+  }
+
+  .map-wrapper {
+    width: 70%;
+  }
+}
+
+@media (max-width: 514px) {
+  .contacts {
+    align-items: flex-start;
+  }
+
+  .contacts-list-wrapper {
+    text-align: left;
+  }
+
+  .map-wrapper {
+    width: 100%;
+  }
 }

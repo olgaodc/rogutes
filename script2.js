@@ -1,3 +1,21 @@
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navigationMenu = document.querySelector('.navbar-list');
+
+hamburgerMenu.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('active');
+    navigationMenu.classList.toggle('active');
+
+})
+
+document.querySelectorAll('.navbar-item').forEach(n => n.addEventListener('click', () => {
+    hamburgerMenu.classList.remove('active');
+    navigationMenu.classList.remove('active');
+}))
+
+
+
+
+
 const itemId = localStorage.getItem('itemId');
 
 fetch('https://642c65dc208dfe25472f319b.mockapi.io/sleddings/' + itemId)

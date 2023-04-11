@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Uride Kontaktai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="content-wrapper">
+    <div class="header-wrapper">
+      <div class="container">
+        <div class="header">
+          <a href="./index.html" class="logo-link">
+            <div class="logo-wrapper">
+              <img class="logo-image" src="./logo.png" alt="">
+              <span class="logo-text">Uride</span>
+            </div>
+          </a>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">Rogutės</a>
+            </li>
+            <li class="navbar-item">
+              <a href="./contacts.html" class="navbar-link">Kontaktai</a>
+            </li>
+          </ul>
+
+          <div class="hamburger-menu">
+            <span class="hamburger-menu-line"></span>
+            <span class="hamburger-menu-line"></span>
+            <span class="hamburger-menu-line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="contacts-wrapper">
+      <div class="container">
+            
+        <div class="contacts">
+          <div class="contacts-list-wrapper">
+            <h2 class="contacts-title">Mus rasite</h2>
+            <ul class="contacts-list">
+              <li class="contact-item"><strong>Adresas: </strong><a class="contact-link" href="https://www.google.com/maps/place/J.+Kubiliaus+g.+2,+08234+Vilnius/@54.7081005,25.2955586,17z/data=!4m6!3m5!1s0x46dd96afe8f23287:0x394cb37a3a3903ea!8m2!3d54.7081005!4d25.2966932!16s%2Fg%2F11cncl354m" target="_blank">J. Kubiliaus g. 2, Vilnius</a>
+              </li>
+              <li class="contact-item"><strong>Telefonas: </strong><a class="contact-link" href="tel: +37062864135">+37062864135</a></li>
+              <li class="contact-item"><strong>El. paštas: </strong><a class="contact-link" href="mailto: uride@pinfo.lt">uride@info.lt</a>
+              </li>
+            </ul>
+          </div>
+              
+          <div class="map-wrapper">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.086544673624!2d25.29555862955711!3d54.70810050000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd96afe8f23287%3A0x394cb37a3a3903ea!2sJ.%20Kubiliaus%20g.%202%2C%2008234%20Vilnius!5e0!3m2!1slt!2slt!4v1681161410758!5m2!1slt!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="footer-wrapper">
+      <div class="container">
+        <div class="footer">
+          <span class="footer-info">© Copyright 2023 Uride</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navigationMenu = document.querySelector('.navbar-list');
+
+    hamburgerMenu.addEventListener('click', () => {
+      hamburgerMenu.classList.toggle('active');
+      navigationMenu.classList.toggle('active');
+
+    })
+
+    document.querySelectorAll('.navbar-item').forEach(n => n.addEventListener('click', () => {
+      hamburgerMenu.classList.remove('active');
+      navigationMenu.classList.remove('active');
+    }))
+  </script>
+</body>
+</html>

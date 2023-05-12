@@ -17,6 +17,8 @@ body {
 
 .header-wrapper {
   background-color:#e5f4f9;
+  position: sticky;
+  top: 0;
 }
 
 .header {
@@ -61,8 +63,13 @@ body {
 
 .navbar-link {
   text-decoration: none;
-  color: black;
-  font-weight: 500;
+  color: #246181;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.navbar-link:hover {
+  opacity: 0.7;
 }
 
 .hamburger-menu{
@@ -80,13 +87,21 @@ body {
   transition: all 0.3s ease;
 }
 
+.title {
+  text-align: center;
+  font-size: 40px;
+  margin: 60px 0 80px;
+  color: #1e3b4a;
+  font-family: 'Catamaran', sans-serif;
+}
+
 .main-menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
   gap: 50px;
-  margin: 80px 0 80px;
+  margin: 0 0 80px;
 }
 
 .menu-link {
@@ -141,6 +156,10 @@ body {
   display: flex;
   justify-content: center;
   padding: 25px 0;
+}
+
+.footer-info {
+  font-weight: 600;
 }
 
 @media (max-width: 406px) {

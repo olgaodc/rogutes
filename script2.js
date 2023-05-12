@@ -23,7 +23,6 @@ fetch('https://642c65dc208dfe25472f319b.mockapi.io/sleddings/' + itemId)
     return res.json();
 })
 .then((data) => {
-    console.log(data);
 
     const sleddingSection = document.querySelector('.sledding-section');
 

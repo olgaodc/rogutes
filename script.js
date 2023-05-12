@@ -14,7 +14,6 @@ document.querySelectorAll('.navbar-item').forEach(n => n.addEventListener('click
 
 
 const getCities = (sledding) => {
-  console.log(sledding);
   const mainMenu = document.querySelector('.main-menu');
 
   const menuLink = document.createElement('a');
